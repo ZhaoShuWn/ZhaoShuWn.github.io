@@ -17,14 +17,18 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fafb">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   
-  <title>ShuWn'学习笔记</title>
+  <title>机器人学-运动控制（4） - ShuWn'学习笔记</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="ShuWn&#39;学习笔记">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="RPY角">
+<meta property="og:type" content="article">
+<meta property="og:title" content="机器人学-运动控制（4）">
+<meta property="og:url" content="http://example.com/2024/05/19/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%884%EF%BC%89/index.html">
 <meta property="og:site_name" content="ShuWn&#39;学习笔记">
+<meta property="og:description" content="RPY角">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-05-19T05:32:33.543Z">
+<meta property="article:modified_time" content="2024-05-19T06:08:00.031Z">
 <meta property="article:author" content="ShuWn">
 <meta name="twitter:card" content="summary">
   
@@ -45,7 +49,7 @@
 </head>
 <body>
 
-<div class="l_body s:aa index tech" id="start" layout="undefined" ><aside class="l_left"><div class="leftbar-container">
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://xaoxuu.com/assets/wiki/stellar/icon.svg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">ShuWn'学习笔记</div></a></div></header>
@@ -57,36 +61,115 @@
 <nav class="menu dis-select"></nav>
 </div>
 <div class="widgets">
+
+
 <widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/05/19/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%885%EF%BC%89/"><span class="title">机器人学-运动控制（5）</span></a><a class="item title" href="/2024/05/19/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%884%EF%BC%89/"><span class="title">机器人学-运动控制（4）</span></a><a class="item title" href="/2024/05/17/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%881%EF%BC%89/"><span class="title">机器人学-运动控制（1）</span></a><a class="item title" href="/2024/05/19/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%883%EF%BC%89/"><span class="title">机器人学-运动控制（3）</span></a><a class="item title" href="/2024/05/19/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%882%EF%BC%89/"><span class="title">机器人学-运动控制（2）</span></a><a class="item title" href="/2024/05/18/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84%E7%BD%91%E7%AB%99/"><span class="title">一些好用的网站汇总</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://xaoxuu.com/assets/wiki/stellar/icon.svg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">ShuWn'学习笔记</div></a></div></header>
 
 
 
 
-<div class="navbar top"><nav class="post"><a class="active" href="/">近期发布</a><a href="/archives">归档</a></nav></div>
-<div class="post-list post"><a class="post-card post" href="/2024/05/19/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%885%EF%BC%89/">
-<article class="md-text"><h2 class="post-title">机器人学-运动控制（5）</h2><div class="excerpt"><p>欧拉角</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2024-05-19T05:42:09.115Z">2024-05-19</time></span></div></article>
-</a><a class="post-card post" href="/2024/05/19/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%884%EF%BC%89/">
-<article class="md-text"><h2 class="post-title">机器人学-运动控制（4）</h2><div class="excerpt"><p>RPY角</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2024-05-19T05:32:33.543Z">2024-05-19</time></span></div></article>
-</a><a class="post-card post" href="/2024/05/19/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%883%EF%BC%89/">
-<article class="md-text"><h2 class="post-title">机器人学-运动控制（3）</h2><div class="excerpt"><p>绕容易轴旋转的变换</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2024-05-19T05:31:16.172Z">2024-05-19</time></span></div></article>
-</a><a class="post-card post" href="/2024/05/19/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%882%EF%BC%89/">
-<article class="md-text"><h2 class="post-title">机器人学-运动控制（2）</h2><div class="excerpt"><p>齐次坐标与齐次变换矩阵</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2024-05-19T05:29:07.779Z">2024-05-19</time></span></div></article>
-</a><a class="post-card post" href="/2024/05/18/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84%E7%BD%91%E7%AB%99/">
-<article class="md-text"><h2 class="post-title">一些好用的网站汇总</h2><div class="excerpt"><p>一些我用到的网站</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2024-05-18T13:20:05.945Z">2024-05-18</time></span></div></article>
-</a><a class="post-card post" href="/2024/05/17/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%881%EF%BC%89/">
-<article class="md-text"><h2 class="post-title">机器人学-运动控制（1）</h2><div class="excerpt"><p>空间位置的描述与坐标变换</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2024-05-17T13:56:54.819Z">2024-05-17</time></span></div></article>
-</a></div>
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-05-19T05:32:33.543Z">2024-05-19</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-05-19T06:08:00.031Z">2024-05-19</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>机器人学-运动控制（4）</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><h2 id="5、RPY角"><a href="#5、RPY角" class="headerlink" title="5、RPY角"></a>5、RPY角</h2><p>RPY角是描述飞机等物体在空中飞行时姿态的一种方法，将坐标系固定在飞机上。（固定坐标系）</p>
+<ol>
+<li>绕着Z轴转动称为横滚（Roll）</li>
+<li>绕着Y轴转动称为俯仰（Pitch）</li>
+<li>绕着X轴转动称为偏航（Yaw）</li>
+</ol>
+<p>RPY叫属于绕固定坐标系旋转的位姿变换方式，变换规则：先绕着X轴旋转$\gamma$，再绕着Y轴旋转$\beta$，最后绕着Z轴旋转$\alpha$。</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+RPY(\gamma, \beta, \alpha) & =R\left(Z_{i}, \alpha\right) R\left(Y_{i}, \beta\right) R\left(X_{i}, \gamma\right) \\
+& =\left(\begin{array}{ccc}
+c \alpha & -s \alpha & 0 \\
+s \alpha & c \alpha & 0 \\
+0 & 0 & 1
+\end{array}\right)\left(\begin{array}{ccc}
+c \beta & 0 & s \beta \\
+0 & 1 & 0 \\
+-s \beta & 0 & c \beta
+\end{array}\right)\left(\begin{array}{ccc}
+1 & 0 & 0 \\
+0 & c \gamma & -s \gamma \\
+0 & s \gamma & c \gamma
+\end{array}\right) \\
+& =\left(\begin{array}{ccc}
+c \alpha c \beta & c \alpha s \beta s \gamma-s \alpha c \gamma & c \alpha s \beta c \gamma+s \alpha s \gamma \\
+s \alpha c \beta & s \alpha s \beta s \gamma-c \alpha c \gamma & s \alpha s \beta c \gamma-c \alpha s \gamma \\
+-s \beta & c \beta s \gamma & c \beta c \gamma
+\end{array}\right)
+\end{aligned}</script><h3 id="5-1他的逆解"><a href="#5-1他的逆解" class="headerlink" title="5.1他的逆解"></a>5.1他的逆解</h3><p> 给出变换后的旋转矩阵，现在求解对应绕固定坐标系的转角。</p>
+<script type="math/tex; mode=display">
+RPY(\gamma, \beta, \alpha)=\left(\begin{array}{cccc}
+n_{x} & o_{x} & a_{x} & 0 \\
+n_{y} & o_{y} & a_{y} & 0 \\
+n_{z} & o_{z} & a_{z} & 0 \\
+0 & 0 & 0 & 1
+\end{array}\right)</script><p>有上面两个矩阵第一列的第一个和第二个元素分别平方求和，得到：</p>
+<script type="math/tex; mode=display">
+cos^{2}\theta cos^{2}\beta + sin^{2}\theta cos^{2}\beta = cos^{2}\beta \\
+= n_{x}^{2} + n_{y}^{2}</script><p>即：</p>
+<script type="math/tex; mode=display">
+cos\beta = \sqrt{n_{x}^{2} + n_{y}^{2}}</script><p>这里本来应该是带正负，但是通常取$(90, 90]$。</p>
+<p>又有：</p>
+<script type="math/tex; mode=display">
+-sin\beta = n_{z}</script><p>则有：</p>
+<script type="math/tex; mode=display">
+tan\beta = -\frac{n_{z}}{\sqrt{n_{x}^{2} + n_{y}^{2}}}</script><p>而对于求$\alpha$，我们只需要矩阵第一列的第一个和第二个元素相除，即：</p>
+<script type="math/tex; mode=display">
+\frac{s\alpha c\beta}{c\alpha c \beta}= \frac{n_{y}}{n_{x}}=tan\alpha</script><p>对于$\gamma$同理，将矩阵最后一行的第二个第三个元素想除：</p>
+<script type="math/tex; mode=display">
+tan\gamma =\frac{o_{z}}{a_{x}}</script><p>注：如果$\beta=\pm90$，则$cos\beta=0$，则</p>
+<script type="math/tex; mode=display">
+R=\left[\begin{array}{ccc}
+0 & c \alpha s \gamma-s \alpha c \gamma & c \alpha c \gamma+s \alpha s \gamma \\
+0 & s \alpha s \gamma-c \alpha c \gamma & s \alpha c \gamma-c \alpha s \gamma \\
+-1 & 0 & 0
+\end{array}\right]</script><p>这里只能解出他们的和或是差，假设$\alpha=0$，则有：$\beta=90$；$\gamma=arctan \frac{o_{x}}{o_{y}}$或$\gamma=-arctan \frac{o_{x}}{o_{y}}$。</p>
+
+<div class="article-footer fs14">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    </div>
+</article>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2024/05/19/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%885%EF%BC%89/">机器人学-运动控制（5）</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/05/19/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%883%EF%BC%89/">机器人学-运动控制（3）</a></div></section></div>
+
+
+
+
 
 
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">ShuWn</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.28.1">Stellar 1.28.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel blur'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81RPY%E8%A7%92"><span class="toc-text">5、RPY角</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1%E4%BB%96%E7%9A%84%E9%80%86%E8%A7%A3"><span class="toc-text">5.1他的逆解</span></a></li></ol></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
@@ -533,6 +616,26 @@
       })
     }
   });
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    processEscapes: true
+  }
+});
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  }
+});
+MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for(i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
 </script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
