@@ -23,12 +23,12 @@
     <meta name="description" content="空间位置的描述与坐标变换">
 <meta property="og:type" content="article">
 <meta property="og:title" content="机器人学-运动控制（1）">
-<meta property="og:url" content="http://example.com/2024/05/17/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6/index.html">
+<meta property="og:url" content="http://example.com/2024/05/17/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%881%EF%BC%89/index.html">
 <meta property="og:site_name" content="ShuWn&#39;学习笔记">
 <meta property="og:description" content="空间位置的描述与坐标变换">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-05-17T13:56:54.819Z">
-<meta property="article:modified_time" content="2024-05-18T16:42:09.699Z">
+<meta property="article:modified_time" content="2024-05-19T05:33:36.264Z">
 <meta property="article:author" content="ShuWn">
 <meta name="twitter:card" content="summary">
   
@@ -63,7 +63,7 @@
 <div class="widgets">
 
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/05/17/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6/"><span class="title">机器人学-运动控制（1）</span></a><a class="item title" href="/2024/05/18/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84%E7%BD%91%E7%AB%99/"><span class="title">一些好用的网站汇总</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/05/17/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%881%EF%BC%89/"><span class="title">机器人学-运动控制（1）</span></a><a class="item title" href="/2024/05/19/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%884%EF%BC%89/"><span class="title">机器人学-运动控制（4）</span></a><a class="item title" href="/2024/05/19/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%883%EF%BC%89/"><span class="title">机器人学-运动控制（3）</span></a><a class="item title" href="/2024/05/19/%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%AD%A6-%E8%BF%90%E5%8A%A8%E6%8E%A7%E5%88%B6%EF%BC%882%EF%BC%89/"><span class="title">机器人学-运动控制（2）</span></a><a class="item title" href="/2024/05/18/%E4%B8%80%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84%E7%BD%91%E7%AB%99/"><span class="title">一些好用的网站汇总</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -76,7 +76,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-05-17T13:56:54.819Z">2024-05-17</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-05-18T16:42:09.699Z">2024-05-19</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-05-17T13:56:54.819Z">2024-05-17</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-05-19T05:33:36.264Z">2024-05-19</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -110,120 +110,7 @@
 <p>则他的关系为$v_{3}=Rot(y, 90)Rot(z, 45)v_{1}$​（固定坐标系，从右向左）。</p>
 <h3 id="2-3-实例3"><a href="#2-3-实例3" class="headerlink" title="2.3 实例3"></a>2.3 实例3</h3><p>开始时，坐标系{A}与坐标系{B}重合，使坐标系{B}绕$Z_{B}$旋转theata度；然后再绕$X_{B}$旋转phi度。求解对矢量$^{B}p$的描述变为对$^{A}p$描述的旋转矩阵。</p>
 <p>$Rot(z, theta)Rot(x, phi)$</p>
-<h2 id="3、齐次坐标与齐次变换矩阵"><a href="#3、齐次坐标与齐次变换矩阵" class="headerlink" title="3、齐次坐标与齐次变换矩阵"></a>3、齐次坐标与齐次变换矩阵</h2><p>齐次坐标是用$n+1$维来表示$n$维坐标，则该$n+1$维坐标即为$n$维坐标的齐次坐标。令$w$为该齐次坐标中的比例因子，他的形式为$p=(x_{0}, y_{0}, z_{0}, w)^{T}$​。它的目的是为了合并矩阵变换中的乘法和加法。</p>
-<p>当$w=1$时，称为齐次坐标的规范化形式，即$p=(x_{0}, y_{0}, z_{0}, 1)^{T}$​。</p>
-<p>当$w\ne1$时，则相当于该列阵中各元素同时乘以一个非零比例因子$w$，仍表示原来的点。</p>
-<p>$p=(a, b, c, w)^{T}$，其中，$a=wp_{x}$；$b=wp_{y}$；$c=wp_{z}$​。</p>
-<h3 id="3-1-实例1"><a href="#3-1-实例1" class="headerlink" title="3.1 实例1"></a>3.1 实例1</h3><p>将矢量$2i+2j+7k$被矢量$i-2j+6k$平移后得到新矢量$v_{1}$。</p>
-<script type="math/tex; mode=display">
-v_{1}=
-\begin{pmatrix}
-     1 & 0 & 0 & 1 \\
-     0 & 1 & 0 & -2 \\
-     0 & 0 & 1 & 6 \\
-     0 & 0 & 0 & 1
-\end{pmatrix}
-\begin{pmatrix}
- 2\\
- 2\\
- 7\\
- 1
-\end{pmatrix}=\begin{pmatrix}
- 3\\
- 0\\
- 13\\
- 1
-\end{pmatrix}</script><h3 id="3-2-实例2"><a href="#3-2-实例2" class="headerlink" title="3.2 实例2"></a>3.2 实例2</h3><p>将矢量$2i+2j+7k$绕$z$轴旋转45度后得到新矢量$v_{2}$​</p>
-<script type="math/tex; mode=display">
-v_{2}=
-\begin{pmatrix}
-     0.7 & -0.7 & 0 & 0 \\
-     0.7 & 0.7 & 0 & 0 \\
-     0 & 0 & 1 & 0 \\
-     0 & 0 & 0 & 1
-\end{pmatrix}
-\begin{pmatrix}
- 2\\
- 2\\
- 7\\
- 1
-\end{pmatrix}=\begin{pmatrix}
- 0\\
- 2.82\\
- 7\\
- 1
-\end{pmatrix}</script><h3 id="3-3-实例3"><a href="#3-3-实例3" class="headerlink" title="3.3 实例3"></a>3.3 实例3</h3><p>已知坐标系{B}的初始位姿与{A}重合，首先{B}相对于坐标系{A}的$z_{A}$轴转30度，再沿{A}的$x_{A}$轴移动12单位，并沿{A}的$y_{A}$轴移动6单位。求位置矢量$^{A}p_{B_{0}}$和旋转矩阵$^{A}_{B}R$。假设点p在坐标系{B}的描述为$^{B}p=(3, 7, 0)^{T}$，求他在坐标系{A}中的描述$^{A}p$​​。</p>
-<p>该题中，$\begin{pmatrix}<br> ^{B}p\\<br> 1<br>\end{pmatrix}$，$\begin{pmatrix}<br>     ^{A}_{B}R &amp; ^{A}p_{B_{0}} \\<br>     0 &amp; 1<br>\end{pmatrix}=^{A}_{B}T$,</p>
-<p>则$^{A}p=^{A}_{B}T^{B}p$​。</p>
-<h3 id="3-4-实例4"><a href="#3-4-实例4" class="headerlink" title="3.4 实例4"></a>3.4 实例4</h3><p>矩阵$T=\begin{pmatrix}<br>     a &amp; 0 &amp; -1 &amp; 5 \\<br>     b &amp; 0 &amp; 0 &amp; 6 \\<br>     c &amp; -1 &amp; 0 &amp; -4 \\<br>     0 &amp; d &amp; 0 &amp; 1<br>\end{pmatrix}$为齐次旋转矩阵，求解其中未知数。</p>
-<h2 id="4、一般形式的旋转变换矩阵"><a href="#4、一般形式的旋转变换矩阵" class="headerlink" title="4、一般形式的旋转变换矩阵"></a>4、一般形式的旋转变换矩阵</h2><p>对于绕进过原点的任意单位矢量$f$旋转theta角度的旋转矩阵。</p>
-<p>设$f=(f_{x}, f_{y}, f_{z})^{T}$，且$f^{2}_{x}+f^{2}_{y}+f^{2}_{z}=1$，则有公式：</p>
-<script type="math/tex; mode=display">
-\operatorname{Rot}(\boldsymbol{f}, \theta)=\\ \left(\begin{array}{cccc}
-f_{x} f_{x} vers \theta+c \theta & f_{y} f_{x} vers \theta-f_{z} s \theta & f_{z} f_{x} vers \theta+f_{y} s \theta & 0 \\
-f_{x} f_{y} vers \theta+f_{z} s \theta & f_{y} f_{y} vers \theta+c \theta & f_{z} f_{y} vers \theta-f_{y} s \theta & 0 \\
-f_{x} f_{z} vers \theta-f_{z} s \theta & f_{y} f_{z} vers \theta+f_{x} s \theta & f_{z} f_{z} vers \theta+c \theta & 0 \\
-0 & 0 & 0 & 1
-\end{array}\right)</script><p>其中，$vers\theta=1-c\theta$</p>
-<h3 id="4-1-已知旋转矩阵，求-f-？"><a href="#4-1-已知旋转矩阵，求-f-？" class="headerlink" title="4.1 已知旋转矩阵，求$f$？"></a>4.1 已知旋转矩阵，求$f$？</h3><script type="math/tex; mode=display">
-{ }_{B}^{A} R=\left(\begin{array}{cccc}
-n_{x} & o_{x} & a_{x} & 0 \\
-n_{y} & o_{y} & a_{y} & 0 \\
-n_{z} & o_{z} & a_{z} & 0 \\
-0 & 0 & 0 & 1
-\end{array}\right)</script><p>求解坐标系{B}相对于坐标系{A}的等效旋转轴$f$和等效旋转角$\theta$​。</p>
-<p>由题可得：</p>
-<script type="math/tex; mode=display">
-\left(\begin{array}{cccc}
-n_{x} & o_{x} & a_{x} & 0 \\
-n_{y} & o_{y} & a_{y} & 0 \\
-n_{z} & o_{z} & a_{z} & 0 \\
-0 & 0 & 0 & 1
-\end{array}\right)=\\ \left(\begin{array}{cccc}
-f_{x} f_{x} vers \theta+c \theta & f_{y} f_{x} vers \theta-f_{z} s \theta & f_{z} f_{x} vers \theta+f_{y} s \theta & 0 \\
-f_{x} f_{y} vers \theta+f_{z} s \theta & f_{y} f_{y} vers \theta+c \theta & f_{z} f_{y} vers \theta-f_{y} s \theta & 0 \\
-f_{x} f_{z} vers \theta-f_{z} s \theta & f_{y} f_{z} vers \theta+f_{x} s \theta & f_{z} f_{z} vers \theta+c \theta & 0 \\
-0 & 0 & 0 & 1
-\end{array}\right)</script><p>等式左侧对角线求和为;</p>
-<script type="math/tex; mode=display">
-n_{x}+o_{y}+a_{z}</script><p>等式右侧对角线求和为：</p>
-<script type="math/tex; mode=display">
-f^{2}_{x}(1-cos\theta)+cos\theta+f^{2}_{y}(1-cos\theta)+cos\theta+f^{2}_{z}(1-cos\theta)+cos\theta</script><p>整理一下：</p>
-<script type="math/tex; mode=display">
-f^{2}_{x}+f^{2}_{y}+f^{2}_{z}-(f^{2}_{x}+f^{2}_{y}+f^{2}_{z})cos\theta+3cos\theta</script><p>即：</p>
-<script type="math/tex; mode=display">
-1+2cos\theta</script><p>左边等于右边，也就是是说</p>
-<script type="math/tex; mode=display">
-cos\theta=\frac{1}{2} (n_{x}+o_{y}+a_{z})</script><p>接下来将矩阵中某些元素分别对应相减，得到：</p>
-<script type="math/tex; mode=display">
-\left\{\begin{array}{l}
-o_{z}-a_{y}=2 f_{x} sin \theta \\
-a_{x}-n_{z}=2 f_{y} sin \theta \\
-n_{y}-o_{x}=2 f_{z} sin \theta
-\end{array}\right.</script><p>对上面每个式子都平方再相加，得到：</p>
-<script type="math/tex; mode=display">
-\left(o_{z}-a_{y}\right)^{2}+\left(a_{x}-n_{z}\right)^{2}+\left(n_{y}-o_{x}\right)^{2}=4 sin^{2} \theta</script><p>开个根号得到：</p>
-<script type="math/tex; mode=display">
-sin \theta= \pm \frac{1}{2} \sqrt{\left(o_{z}-a_{y}\right)^{2}+\left(a_{x}-n_{z}\right)^{2}+\left(n_{y}-o_{x}\right)^{2}}</script><p>用$\frac{sin\theta}{cos\theta}=tan\theta$，得到：</p>
-<script type="math/tex; mode=display">
-\tan \theta= \pm \frac{\sqrt{\left(o_{z}-a_{y}\right)^{2}+\left(a_{x}-n_{z}\right)^{2}+\left(n_{y}-o_{x}\right)^{2}}}{n_{x}+o_{y}+a_{z}-1}</script><p>知道了角度，再由</p>
-<script type="math/tex; mode=display">
-\left\{\begin{array}{l}
-o_{z}-a_{y}=2 f_{x} sin \theta \\
-a_{x}-n_{z}=2 f_{y} sin \theta \\
-n_{y}-o_{x}=2 f_{z} sin \theta
-\end{array}\right.</script><p>可得出：</p>
-<script type="math/tex; mode=display">
-\left\{\begin{array}{l}
-f_{x}=\frac{o_{z}-a_{y}}{2 \sin \theta} \\
-f_{y}=\frac{a_{x}-n_{z}}{2 \sin \theta} \\
-f_{z}=\frac{n_{y}-o_{x}}{2 \sin \theta}
-\end{array}\right.</script><p>注：转轴和转角可能不唯一。</p>
-<h3 id="4-2-实例1"><a href="#4-2-实例1" class="headerlink" title="4.2 实例1"></a>4.2 实例1</h3><p>已知某个坐标变换$T=\left(\begin{array}{cccc}<br>0 &amp; 1 &amp; 0 &amp; 0 \\<br>0 &amp; 0 &amp; -1 &amp; 0 \\<br>-1 &amp; 0 &amp; 0 &amp; 0 \\<br>0 &amp; 0 &amp; 0 &amp; 1<br>\end{array}\right)$，如果满足$Rot(f, \theta)=T$，确定$f$和$\theta$。</p>
-<script type="math/tex; mode=display">
-tan\theta=\pm\sqrt{3}</script><p>则如$\theta\in(0, \pi)$，$cos\theta=-\frac{1}{2}$，$\theta=\frac{2}{3}\pi$</p>
-<p>则可求得结果。</p>
-<h2 id="5、RPY角"><a href="#5、RPY角" class="headerlink" title="5、RPY角"></a>5、RPY角</h2>
+
 <div class="article-footer fs14">
     <section id="license">
       <div class="header"><span>许可协议</span></div>
@@ -246,7 +133,7 @@ tan\theta=\pm\sqrt{3}</script><p>则如$\theta\in(0, \pi)$，$cos\theta=-\frac{1
 
 
 
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E4%BD%8D%E7%BD%AE%E7%9A%84%E6%8F%8F%E8%BF%B0"><span class="toc-text">1、位置的描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A2"><span class="toc-text">2、坐标变换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%AE%9E%E4%BE%8B1"><span class="toc-text">2.1 实例1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E5%AE%9E%E4%BE%8B2"><span class="toc-text">2.2 实例2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E5%AE%9E%E4%BE%8B3"><span class="toc-text">2.3 实例3</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E9%BD%90%E6%AC%A1%E5%9D%90%E6%A0%87%E4%B8%8E%E9%BD%90%E6%AC%A1%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5"><span class="toc-text">3、齐次坐标与齐次变换矩阵</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E5%AE%9E%E4%BE%8B1"><span class="toc-text">3.1 实例1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E5%AE%9E%E4%BE%8B2"><span class="toc-text">3.2 实例2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E5%AE%9E%E4%BE%8B3"><span class="toc-text">3.3 实例3</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-%E5%AE%9E%E4%BE%8B4"><span class="toc-text">3.4 实例4</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E4%B8%80%E8%88%AC%E5%BD%A2%E5%BC%8F%E7%9A%84%E6%97%8B%E8%BD%AC%E5%8F%98%E6%8D%A2%E7%9F%A9%E9%98%B5"><span class="toc-text">4、一般形式的旋转变换矩阵</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E5%B7%B2%E7%9F%A5%E6%97%8B%E8%BD%AC%E7%9F%A9%E9%98%B5%EF%BC%8C%E6%B1%82-f-%EF%BC%9F"><span class="toc-text">4.1 已知旋转矩阵，求$f$？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E5%AE%9E%E4%BE%8B1"><span class="toc-text">4.2 实例1</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81RPY%E8%A7%92"><span class="toc-text">5、RPY角</span></a></li></ol></div><div class="widget-footer">
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E4%BD%8D%E7%BD%AE%E7%9A%84%E6%8F%8F%E8%BF%B0"><span class="toc-text">1、位置的描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%9D%90%E6%A0%87%E5%8F%98%E6%8D%A2"><span class="toc-text">2、坐标变换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%AE%9E%E4%BE%8B1"><span class="toc-text">2.1 实例1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E5%AE%9E%E4%BE%8B2"><span class="toc-text">2.2 实例2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E5%AE%9E%E4%BE%8B3"><span class="toc-text">2.3 实例3</span></a></li></ol></li></ol></div><div class="widget-footer">
 
 <a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
 </div></aside><div class='float-panel blur'>
